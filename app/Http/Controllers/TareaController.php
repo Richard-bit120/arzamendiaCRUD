@@ -78,7 +78,7 @@ class TareaController extends Controller
         $tarea->nombre = $request->input('nombre');
         $tarea->save();
 
-        return redirect()->route('tareas,index')->with('sucecess', 'Tarea actualizada exitosamente');
+        return redirect()->route('tareas,index')->with('sucecess', 'Tarea actualizada exitosamente.');
     }
 
     /**
@@ -89,6 +89,7 @@ class TareaController extends Controller
      */
     public function destroy(Tarea $tarea)
     {
-        //
+        $tarea->delete();
+        return redirect()->route('tarea.index')->with('success','Tarea eliminada exito');
     }
 }
