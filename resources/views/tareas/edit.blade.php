@@ -9,7 +9,7 @@
                 <div class = "card-body">
                     <form action = "{{ route('tareas.update', $tarea->id) }}" method = "POST">
                         @csrf
-                        @method = ('PUT')
+                        @method ('PUT')
                         <div class = "mb-3">
                             <label for = "nombre" class = "form-label">Nombre de la tarea</label>
                             <input type = "text" name = "npmbre" id = "nombre" class = "form-control" value = "{{$tarea->nombre}}" required>
