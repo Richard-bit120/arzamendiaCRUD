@@ -29,7 +29,7 @@
                                     <td>{{ $tarea->nombre }}</td>
                                     <td>
                                         <a href = "{{ route('tareas.edit', $tarea->id) }}" class = "btn btn-warning btn-sm">Editar</a>
-                                            <form action = "{{ route ('tarea.destroy') , $tarea->id }}" method = "POST" style = "display:inline-block;">
+                                            <form action = "{{ route('tareas.destroy' , $tarea->id) }}" method = "POST" style = "display:inline-block;">
                                                 @csrf
                                                 @method ('DELETE')
                                                 <button type = "submit" class = "btn btn-danger btn-sm" onclick = "return confirm('¿Estas seguro de eliminar esta tarea')">
