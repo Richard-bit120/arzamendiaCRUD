@@ -12,7 +12,7 @@
                         @method ('PUT')
                         <div class = "mb-3">
                             <label for = "nombre" class = "form-label">Nombre de la tarea</label>
-                            <input type = "text" name = "npmbre" id = "nombre" class = "form-control" value = "{{$tarea->nombre}}" required>
+                            <input type = "text" name = "nombre" id = "nombre" class = "form-control" value = "{{$tarea->nombre}}" required>
                         </div>
                         <button type = "submit" class = "btn btn-primary">Actualizar</button>
                         <a href = "{{ route('tareas.index') }}" class = "btn btn-secondary">Cancelar</a>
