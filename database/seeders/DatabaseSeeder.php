@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(TareaSeeder::class);
+        $this->call(TareaSeeder::class);//ghgfhfg
         $this->call(UserSeeder::class);    #LLAMA EL ARCHIVO USERSEED, ORDEN EJECUCION 07-07-2025
         // \App\Models\User::factory(10)->create();
 
