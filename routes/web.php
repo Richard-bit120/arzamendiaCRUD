@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AutoController;
+use App\Http\Controllers\TareaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +34,5 @@ Route::get('tareas/{tarea}/edit', [App\Http\Controllers\TareaController::class, 
 Route::put('/tareas/{tarea}', [App\Http\Controllers\TareaController::class, 'update']) ->name('tareas.update');
 
 Route::delete('/tareas/{tarea}', [App\Http\Controllers\TareaController::class, 'destroy']) ->name('tareas.destroy');
+
+Route::resource ('autos', AutoController::class);
